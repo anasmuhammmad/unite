@@ -12,6 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Unite",
   description: "A Next.js 13 Unite Connecting App",
+
 };
 
 export default function RootLayout({
@@ -24,7 +25,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={inter.className}>
           <Topbar />
-          <main>
+          <main className="flex flex-row">
             <LeftSidebar />
 
             <section className="main-container">
